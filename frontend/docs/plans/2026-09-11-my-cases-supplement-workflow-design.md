@@ -1,7 +1,7 @@
 # 「我的案件」補正／補卷工作流設計
 
 日期：2026-09-11  
-範圍：`wally_prototype` 純前端 PC Demo（1280px 以上）
+範圍：`frontend` 純前端 PC Demo（1280px 以上）
 
 ## 目標
 

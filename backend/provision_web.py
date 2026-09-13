@@ -43,7 +43,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
 BUCKET = os.environ.get("WEB_BUCKET", "appeal-web-0913")
 OAC_NAME = "appeal-web-oac"
-COMMENT = "appeal frontend (wally_prototype)"
+COMMENT = "appeal frontend (frontend)"
 
 # CloudFront 的受管快取政策。**不要自己建一個。**
 #   CachingOptimized        內容雜湊過的檔名用這個，長快取
@@ -361,7 +361,7 @@ def main() -> int:
     print("=" * 60)
     print()
     print("下一步：")
-    print("  cd ../wally_prototype && npm run build")
+    print("  cd ../frontend && npm run build")
     print("  cd ../backend && python deploy_web.py")
     print()
     print("⚠️ 把這兩行加進 backend/.env.deploy（它已經在 .gitignore 裡）：")

@@ -1,7 +1,7 @@
 # 「我的案件」案件處理中心 popup 設計
 
 日期：2026-09-11  
-範圍：`wally_prototype` 純前端 PC 版
+範圍：`frontend` 純前端 PC 版
 
 ## 目標
 

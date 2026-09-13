@@ -1,7 +1,7 @@
 # 「我的案件」三大狀態群組設計
 
 日期：2026-09-12  
-範圍：`wally_prototype` 純前端 Demo
+範圍：`frontend` 純前端 Demo
 
 ## 目標
 

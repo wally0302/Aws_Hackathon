@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """把前端 build 出來的檔案上傳到 S3 並讓 CloudFront 失效。
 
-    cd ../wally_prototype && npm run build
+    cd ../frontend && npm run build
     cd ../backend && python deploy_web.py
 
 ⚠️ **要先跑過 `provision_web.py`**，並把它印的兩行加進 `.env.deploy`：
@@ -41,7 +41,7 @@ DIST_ID = os.environ.get("WEB_DIST_ID", "")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DIST_DIR = os.path.normpath(
-    os.path.join(HERE, "..", "wally_prototype", ".output", "public"))
+    os.path.join(HERE, "..", "frontend", ".output", "public"))
 
 LONG = "public, max-age=31536000, immutable"
 NONE = "no-cache, no-store, must-revalidate"
@@ -75,7 +75,7 @@ def main() -> int:
         return 1
     if not os.path.isdir(DIST_DIR):
         print(f"!!  找不到 {DIST_DIR}")
-        print("    先跑：cd ../wally_prototype && npm run build")
+        print("    先跑：cd ../frontend && npm run build")
         return 1
 
     index = os.path.join(DIST_DIR, "index.html")

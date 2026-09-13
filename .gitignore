@@ -1,0 +1,23 @@
+# ⚠️ 比賽規定：程式碼上傳公開儲存庫時不得包含任何機密憑證
+#    （AWS Access Keys、API Tokens、資料庫密碼等）。
+#    這裡是全 repo 的最後一道防線，backend/ 與 frontend/ 另有自己的 .gitignore。
+.env
+.env.*
+!.env.*.example
+*.local
+!*.local.example
+credentials
+*.pem
+*.key
+
+# 建置產物與相依套件（可重建，不進 git）
+node_modules/
+dist/
+.output/
+__pycache__/
+*.pyc
+
+# 作業系統／編輯器
+.DS_Store
+.idea/
+.vscode/
