@@ -1,0 +1,16 @@
+# ⚠️ Layer 的 pip 套件（118 MB）與打包產物，都是可重建的，不進 git。
+#    重建方式見 layer/build.ps1 與 package.ps1。
+layer/python/
+layer/layer.zip
+dist/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ⚠️ 本機憑證與環境設定，**絕對不要進 git**。
+#    `.env` 只會比對完全同名的檔案，`.env.deploy` 不會被擋到——要用 `.env*`。
+#    比賽規定：「請務必確認未包含任何機密憑證資訊」。
+.env*
+!.env.deploy.example
+*.local

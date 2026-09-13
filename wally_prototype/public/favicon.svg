@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    天秤（lucide `scale`）。訴願審議的象徵。
+
+    ⚠️ 原圖是 `stroke="currentColor"` 的 24x24 行內圖示，**不能直接當
+    favicon**：favicon 沒有繼承來的顏色，currentColor 會變成黑色，
+    在深色分頁列上等於看不見。所以這裡把顏色寫死，並加上底色方塊
+    ——白線配深藍底，淺色與深色分頁列都看得清楚。
+
+    ⚠️ 線條加粗到 2.4（原本 2）。16px 的分頁圖示上，2 單位的線
+    只有 1 個實體像素，會糊掉。
+  -->
+  <rect width="32" height="32" rx="7" fill="#0F3562"/>
+  <g transform="translate(3.4 3.4) scale(1.05)"
+     fill="none" stroke="#FFFFFF" stroke-width="2.4"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v18"/>
+    <path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/>
+    <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/>
+    <path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/>
+    <path d="M7 21h10"/>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+# Lambda Layer 的依賴。boto3 不用列，Lambda runtime 自帶。
+pymupdf
+opensearch-py
+requests-aws4auth
